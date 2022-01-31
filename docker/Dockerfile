@@ -23,4 +23,4 @@ WORKDIR /home/palantir
 
 COPY --from=compile-image /home/palantir/build/Palantir /home/palantir/Palantir
 
-ENTRYPOINT ["Palantir"]
+ENTRYPOINT ["/home/palantir/Palantir"]
